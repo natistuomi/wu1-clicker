@@ -73,7 +73,7 @@ function step(timestamp) {
     // på samma sätt kan du även dölja uppgraderingar som inte kan köpas
     if (moneyPerClick == 10 && !achievementTest) {
         achievementTest = true;
-        message('Du har hittat en FOSSIL!', 'achievement');
+        message('Du har uppnått nya renlighetsnivåer!', 'achievement');
     }
 
     window.requestAnimationFrame(step);
@@ -107,12 +107,12 @@ window.addEventListener('load', (event) => {
  */
 upgrades = [
     {
-        name: 'Fin sop',
+        name: 'Sopborste',
         cost: 10,
         amount: 1,
     },
     {
-        name: 'Spade',
+        name: 'Dammsugare',
         cost: 100,
         amount: 10,
     },
@@ -149,16 +149,16 @@ function createCard(upgrade) {
     const cost = document.createElement('p');
 
     header.textContent = `${upgrade.name}, +${upgrade.amount} per sekund.`;
-    cost.textContent = `Köp för ${upgrade.cost} benbitar.`;
+    cost.textContent = `Köp för ${upgrade.cost} städpoäng.`;
 
     card.addEventListener('click', (e) => {
         if (money >= upgrade.cost) {
             moneyPerClick++;
             money -= upgrade.cost;
-            upgrade.cost *= 1.5;
-            cost.textContent = 'Köp för ' + upgrade.cost + ' benbitar';
+            upgrade.cost = Math.round(upgrade.cost * 1.5);
+            cost.textContent = 'Köp för ' + upgrade.cost + ' städpoäng';
             moneyPerSecond += upgrade.amount;
-            message('Grattis du har lockat till dig fler besökare!', 'success');
+            message('Grattis du har blivit av med fler dammråttor!', 'success');
         } else {
             message('Du har inte råd.', 'warning');
         }

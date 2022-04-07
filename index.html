@@ -6,51 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Clicker exempel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vzv8mct.css">
+    <title>Städkrisen</title>
 </head>
 
 <body>
     <main class="container">
         <header>
-            <div class="img-container">
-                <img src="img/brett-meliti-RgkYMfFopIA-unsplash-removebg-preview.png" alt="Fossil">
-            </div>
-            <h1>Fossiljägaren</h1>
-            <p>Med entusiasm och bara händer ger du dig ut i jakten på fossil till ditt museum.</p>
-            <p>Värva hjälpredor och gräv dig till nya upptäckter.</p>
-            <p>Hur många besökare kan du få?</p>
+            <h1>Städkrisen</h1>
+            <p>Du har skjutit upp städningen allt för länge. Nu har du tidspress och brist på motivation när du rusar för att få huset städat till släktträffen. Värva familjen och se till att få det gjort! Hur rent kan du få du?</p>
         </header>
         <section class="game">
             <div class="game-hud">
-                <ul class="game-currency">
-                    <li class="item">
-                        <h1>Benbitar: <span id="money"></span></h1>
-                    </li>
-                    <li class="item">
-                        <h1>Soparskills: <span id="mps"></span></h1>
-                    </li>
-                    <li class="item">
-                        <h1>Besökare: <span id="mpc"></span></h1>
-                    </li>
-                </ul>
-                <div class="game-button">
-                    <button id="click">Sopa</button>
+                
+                <div class="click_button">
+                    <div class="game-button">
+                        <button id="click">Städa</button>
+                    </div>
+                    <ul class="game-currency">
+                        <li class="item">
+                            <h1>Städpoäng: <span id="money"></span></h1>
+                        </li>
+                        <li class="item">
+                            <h1>Hjälpredor: <span id="mps"></span></h1>
+                        </li>
+                        <li class="item">
+                            <h1>Färdigheter: <span id="mpc"></span></h1>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="w-100">
-                <h1>Uppgraderingar</h1>
-                <div id="upgradelist"></div>
-            </div>
+                <div class="w-100">
+                    <h1>Uppgraderingar</h1>
+                    <div id="upgradelist"></div>
+                </div>
             </div>
         </section>
     </main>
     <div id="msgbox"></div>
     <footer class="container">
-        <p>Hjälp till att fixa fel och lägga till funktioner, 
-            <a href="https://github.com/jensnti/clicker/issues">issues</a>
-            eller
-            <a href="https://github.com/jensnti/clicker/pulls">pull requests</a>.
-        </p>
+        <p>Den här sidan är skapad av Natalie Tuomi i utbildningssyfte för kursen Webbutveckling 1.</p>
     </footer>
     <script src="js/clicker.js"></script>
 </body>
