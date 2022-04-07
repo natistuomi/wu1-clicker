@@ -73,6 +73,7 @@ function step(timestamp) {
     // på samma sätt kan du även dölja uppgraderingar som inte kan köpas
     if (moneyPerClick == 10 && !achievementTest) {
         achievementTest = true;
+        moneyPerClick += 3;
         message('Du har uppnått nya renlighetsnivåer!', 'achievement');
     }
 
