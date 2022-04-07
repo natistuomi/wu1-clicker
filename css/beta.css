@@ -106,20 +106,29 @@ footer {
     padding-right: 1rem;
     width: 100%;
 }
+
 @media (min-width: 36rem) {
     .container {
         max-width: 34rem;
+    }
+    
+}
+@media (max-width: 44rem) {
+    .game-hud{
+        flex-direction: column;
     }
 }
 @media (min-width: 48rem) {
     .container {
         max-width: 44rem;
     }
+    
 }
 @media (min-width: 62rem) {
     .container {
         max-width: 54rem;
     }
+    
 }
 
 .img-container {
@@ -134,6 +143,7 @@ footer {
 .game-hud {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .game-currency {
