@@ -1,5 +1,10 @@
 # PM (Clicker) - Natalie Tuomi 14.04.2022
 
+titel: Städkrisen
+tagline: Du har skjutit upp städningen allt för länge. Nu har du tidspress och brist på motivation när du rusar för att få huset städat till släktträffen. Värva familjen och se till att få det gjort! Hur rent kan du få det?
+url: https://natistuomi.github.io/wu1-clicker/
+git: https://github.com/natistuomi/wu1-clicker
+
 ## Inledning
 
 Projektets syfte var att byta ett clicker-spels tema. Det inkluderade ett bytte av färgtema, bild och font. Det här gjordes efter ett kort planeringsstadie då färger, font och tema valdes och en snabb pappersskiss ritades.
